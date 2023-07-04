@@ -1,6 +1,7 @@
 মডিউল ৪ এর এসাইনমেন্ট
-
 Assignment: Creating a Shopping Cart Application
+
+Link: https://friendly-truffle-95282a.netlify.app/index.html
 
 Requirements:
 Create an HTML page with the following elements:
