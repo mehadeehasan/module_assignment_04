@@ -6,7 +6,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
     <title>Module Four Assignment</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
@@ -14,10 +13,14 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html">About</a></li>
+                <li><a href="./index.html">Services</a></li>
+                <li><a href="./index.html">Contact</a></li>
+                <li><a href="./cart.html" id="cart-link">
+                    <img src="./img/cart.jpg" alt="Cart" id="cart-image" width="30" height="30">
+                    <span id="cart-quantity"></span>
+                </a></li>
             </ul>
         </nav>
     </header>
@@ -26,58 +29,14 @@
         <section class="hero">
             <h1>Product List</h1>
         </section>
-        
-        <section class="features">
-            <div class="feature">
-                <img src="./img/product1.jpg" alt="Feature 1">
-                <h3>Feature 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div class="feature">
-                <img src="./img/product1.jpg" alt="Feature 2">
-                <h3>Feature 2</h3>
-                <p>Nulla in tincidunt ex, non rutrum elit.</p>
-            </div>
-            <div class="feature">
-                <img src="./img/product2.jpg" alt="Feature 3">
-                <h3>Feature 3</h3>
-                <p>Curabitur sit amet maximus ex. Sed tristique nunc a lectus.</p>
-            </div>
-            <div class="feature">
-                <img src="./img/product1.jpg" alt="Feature 2">
-                <h3>Feature 2</h3>
-                <p>Nulla in tincidunt ex, non rutrum elit.</p>
-            </div>
-            <div class="feature">
-                <img src="./img/product2.jpg" alt="Feature 3">
-                <h3>Feature 3</h3>
-                <p>Curabitur sit amet maximus ex. Sed tristique nunc a lectus.</p>
-            </div>
-            <div class="feature">
-                <img src="./img/product1.jpg" alt="Feature 2">
-                <h3>Feature 2</h3>
-                <p>Nulla in tincidunt ex, non rutrum elit.</p>
-            </div>
-            <div class="feature">
-                <img src="./img/product2.jpg" alt="Feature 3">
-                <h3>Feature 3</h3>
-                <p>Curabitur sit amet maximus ex. Sed tristique nunc a lectus.</p>
-            </div>
-            <div class="feature">
-                <img src="./img/product1.jpg" alt="Feature 2">
-                <h3>Feature 2</h3>
-                <p>Nulla in tincidunt ex, non rutrum elit.</p>
-            </div>
-            <div class="feature">
-                <img src="./img/product2.jpg" alt="Feature 3">
-                <h3>Feature 3</h3>
-                <p>Curabitur sit amet maximus ex. Sed tristique nunc a lectus.</p>
-            </div>
-        </section>   
+        <div class="feature">
+        <div id="product-list"></div>
+        </div>
     </main>
     
     <footer class="footer">
         <p>&copy; 2023 Mastering on React JS, Next JS & Prisma.(Mehadee Hasan, Batch 01)</p>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
