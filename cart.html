@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <title>Module Four Assignment</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+<body>   
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html">About</a></li>
+                <li><a href="./index.html">Services</a></li>
+                <li><a href="./index.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Product List</h1>
+        </section>
+            <div class="feature">
+                <h1>Cart Summary</h1>
+                <div id="cart-items"></div>
+                <div id="total"></div>
+                <button id="clear-cart-button"> 
+                    Clear All
+                    <i class="fas fa-trash"></i>
+                </button>
+                
+                  <script>
+                    const clearCartButton = document.getElementById('clear-cart-button');
+                
+                    // Add event listener for clearing the cart
+                    clearCartButton.addEventListener('click', function() {
+                      // Clear the cart data and update the display
+                      cartData = [];
+                      renderCartItems();
+                      renderTotal();
+                      localStorage.setItem('cart', JSON.stringify(cartData));
+                    });
+                  </script>
+                <script src="./js/cart.js"></script>
+            </div>  
+    </main>
+    
+    <footer class="footer">
+        <p>&copy; 2023 Mastering on React JS, Next JS & Prisma.(Mehadee Hasan, Batch 01)</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Summary</title>
+</head>
+<body>
+    <h1>Cart Summary</h1>
+    <div id="cart-items"></div>
+    <div id="total"></div>
+    <button id="clear-cart-button"> 
+        Clear All
+        <i class="fas fa-trash"></i>
+    </button>
+    
+      <script>
+        const clearCartButton = document.getElementById('clear-cart-button');
+    
+        // Add event listener for clearing the cart
+        clearCartButton.addEventListener('click', function() {
+          // Clear the cart data and update the display
+          cartData = [];
+          renderCartItems();
+          renderTotal();
+          localStorage.setItem('cart', JSON.stringify(cartData));
+        });
+      </script>
+    <script src="./js/cart.js"></script>
+</body>
+</html> -->
