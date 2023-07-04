@@ -114,17 +114,13 @@ const products = [
   ];
 
 
-//   function productSelect(id){
-//     alert(`You have selected id: ${id}`);
-//   }
-
   const productListContainer = document.getElementById('product-list');
 
   const productHTML = products.map(product => `
     <div class="product">
       <img src="${product.image}" alt="${product.name}" style="width:128px;height:128px;"/>
       <h2>${product.name}</h2>
-      <p>Price: $${product.price}</p>
+      <p>Price: ৳${product.price}</p>
       <button onclick="productSelect(${product.id})">${product.buttonLabel}</button>
     </div>
   `);
@@ -156,7 +152,6 @@ const products = [
     updateCartQuantity();
   
     // Log the updated cart
-    console.log('Cart:', cart);
     localStorage.setItem('cart', JSON.stringify(cart));
   };
   
@@ -182,7 +177,6 @@ const products = [
     if (cartDataString) {
         cartData = JSON.parse(cartDataString);
         cartData = [];
-        console.log(cartData);
         localStorage.setItem('cart', JSON.stringify(cartData));
         cartQuantity.textContent =0;
     }
